@@ -6,12 +6,18 @@ class IndexController < ApplicationController
 
   def index
    
+  if params[:alumno]
+
      if params[:alumno][:email] != "admin"
        
       flash[:notice] = "Usuario no existe" 
       redirect_to :action => "login"
    
      end
+  else
+      flash[:notice] = "Debe estar logeado" 
+      redirect_to :action => "login"  
+  end
 
   end 
 

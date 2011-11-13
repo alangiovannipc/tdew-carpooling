@@ -1,5 +1,7 @@
 class AlumnoController < ApplicationController
-  def register
+ 
+  def registrar
+
   end
 
 end
