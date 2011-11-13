@@ -5,28 +5,29 @@
 <div id="header">
 <h1><a href="/">App Carpooling</a>
 </h1>
+<p><b><%= notice %></b></p>
 </div>
 <div class="container">
     	<div id="topcorners"><div class="cleft"></div><div class="cright"></div></div>
     	<div id="content">
-             <form name="form_login" method="post" action="/index/index">
+             <%= form_tag({:action => 'index'}, {:method => 'post'}) %>
 		<table class="login" style="margin-left: auto; margin-right: auto;">
 	           <tbody>
 			<tr>
 			     <td>
                               	 <p ><strong><label for="email">Username or email</label></strong></p>
-				 <input id="email" tabindex="1" class="inputtext" type="text" name="email">
+				 <input id="email" tabindex="1" class="inputtext" type="text" name="alumno[email]">
 			     </td>
 			</tr>
 			<tr>
 			     <td>
 				<p ><strong><label for="password">Password</label></strong></p>
-				<input tabindex="2" class="inputtext" type="password" name="password" id="password">
+				<input tabindex="2" class="inputtext" type="password" name="alumno[password]" id="password">
 			     </td>
 			</tr>
 			<tr>
 			     <td>
-				<p ><a href="/app/wa/Password/forgot">Forgot password?</a>
+				<p ><a href="/alumno/register">New User</a>
 				<span style="padding: 0 3px;">|</span> <a href="https://github.com/alangiovannipc/tdew-carpooling">Url GitHub</a>
 				</p>
 			     </td> 
@@ -45,7 +46,7 @@
 							<td style="padding-top: 10px;"><input  type="submit" tabindex="4" value="Login"></td>
 						</tr>
 					</tbody></table>
-				</form>
+		  
 			
 			
 		</div>

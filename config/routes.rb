@@ -1,6 +1,6 @@
 TdewCarpooling::Application.routes.draw do
 
-  root :to => redirect('/index/login')
+  root :to => redirect('/alumno/login')
 
   get "alumno/register"
 
@@ -9,6 +9,11 @@ TdewCarpooling::Application.routes.draw do
   get "register/route"
   
   get "index/login"
+
+  match "/index/index" => "index#index"
+  
+  match "/alumno/login" => "index#login"
+
   
 
 
