@@ -1,2 +1,55 @@
-<h1>Index#login</h1>
-<p>Find me in app/views/index/login.html.erb</p>
+<div id='body' class="small login">
+
+
+<div id='wrapper'>
+<div id="header">
+<h1><a href="/">App Carpooling</a>
+</h1>
+</div>
+<div class="container">
+    	<div id="topcorners"><div class="cleft"></div><div class="cright"></div></div>
+    	<div id="content">
+             <form name="form_login" method="post" action="/index/index">
+		<table class="login" style="margin-left: auto; margin-right: auto;">
+	           <tbody>
+			<tr>
+			     <td>
+                              	 <p ><strong><label for="email">Username or email</label></strong></p>
+				 <input id="email" tabindex="1" class="inputtext" type="text" name="email">
+			     </td>
+			</tr>
+			<tr>
+			     <td>
+				<p ><strong><label for="password">Password</label></strong></p>
+				<input tabindex="2" class="inputtext" type="password" name="password" id="password">
+			     </td>
+			</tr>
+			<tr>
+			     <td>
+				<p ><a href="/app/wa/Password/forgot">Forgot password?</a>
+				<span style="padding: 0 3px;">|</span> <a href="https://github.com/alangiovannipc/tdew-carpooling">Url GitHub</a>
+				</p>
+			     </td> 
+			</tr>
+			<tr>
+			    <td>
+				<p >
+					<input type="checkbox" name="remember" id="rememberMe" tabindex="3"> 
+					<label for="rememberMe">Remember me</label>
+				</p>
+			    </td>
+			</tr>
+						
+						
+						<tr>
+							<td style="padding-top: 10px;"><input  type="submit" tabindex="4" value="Login"></td>
+						</tr>
+					</tbody></table>
+				</form>
+			
+			
+		</div>
+		<div id="bottomcorners"><div class="cleft"></div><div class="cright"></div></div>
+</div>
+</div>
+</div>
