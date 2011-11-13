@@ -10,6 +10,8 @@ TdewCarpooling::Application.routes.draw do
   
   get "index/login"
 
+  get "index/inicio"
+
   match "/index/index" => "index#index"
   
   match "/alumno/login" => "index#login"

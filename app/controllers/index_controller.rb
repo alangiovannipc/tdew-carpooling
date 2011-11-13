@@ -15,11 +15,16 @@ class IndexController < ApplicationController
    
      end
   else
-      flash[:notice] = "Debe estar logeado" 
+     flash[:notice] = "Debe estar logeado" 
       redirect_to :action => "login"  
   end
 
   end 
-
+  
+  def inicio
+    
+   render "index"
+   
+  end
 
 end
