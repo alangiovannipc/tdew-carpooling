@@ -1,4 +1,12 @@
 TdewCarpooling::Application.routes.draw do
+  get "alumno/register"
+
+  get "search/route"
+
+  get "register/route"
+
+  get "index/login"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
